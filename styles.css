@@ -13,7 +13,9 @@
 }
 
 /* ------- Header ------- */
-
+.ul-no{
+    list-style-type: none;
+}
 
 .project-name {   
 font-family: 'Bebas Neue';
@@ -73,9 +75,32 @@ letter-spacing: -0.02em;
 color: #111111;
 
 margin-left: 55px;
-
 }
 
 .video-coments:not(:first-child){
     margin-top: 40px;
+}
+
+
+/* ------ Social-links ------ */
+.socials-list{
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 100px;
+
+}
+
+.social-item{
+    padding-top: 70px;
+    background: rgba(204, 184, 210, 0.68);
+    border-radius: 99px;
+}
+
+.socials-item:not(:first-child){
+    margin-top: 70px;
+}
+
+.socials-images{
+
 }
