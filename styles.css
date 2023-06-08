@@ -274,6 +274,33 @@ align-items: center;
 letter-spacing: -0.02em;
 
 color: #FFFFFF;
+}
 
-  
+
+
+
+@media screen and (min-width: 375px) {
+  .header.container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header.container {
+    max-width: 744px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header.container {
+    max-width: 1176px;
+  }
+  .nav-bar,
+  .networks {
+    display: flex;
+  }
+
+  .mob-menu-btn {
+    display: none;
+  }
 }
