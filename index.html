@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
     
+    <script type="module" src="./explore.js"></script>
+
 </head>
 <body>
 
@@ -108,6 +110,47 @@
         </div>
     </section>
 
+    <section class="section-subscribe">
+      <div class="container"><h2 class="titel-subscribe">EXPLORE OUR NEW CHOCOLATE FIRST</h2>
+      <p class="text-subscribe">From the velvety texture to the rich and complex flavor, our New Chocolate is a true
+          indulgence that will leave you
+          craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of
+          art
+          that is sure to please.</p>
+      <button type="button" class="button-subscribe" data-modal-open>Subscribe</button></div>
+          
+      </section>
+    
+      <div class="explore-backdrop is-hidden" data-modal>
+        <div class="explore-modal box">
+          <button class="explore-modal-close" type="button" data-modal-close>
+            <svg class="explore-modal-close-icon">
+              <use href="./img/icons.svg#icon-xclose"></use>
+            </svg>
+          </button>
+      
+          <div class="explore-subscribe">
+            <p class="explore-modal-title">
+              Explore our <span>new&nbsp;chocolate</span> first!
+            </p>
+            <form class="explore-subscribe-form">
+              <label class="explore-subscribe-label" id="email"></label>
+              <div class="explore-subscribe-input-wrap">
+                <input
+                  class="explore-subscribe-input"
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <button class="explore-subscribe-submit" type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      
+    
     
         <footer class="footer container">
           

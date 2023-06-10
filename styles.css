@@ -6,6 +6,41 @@
   margin: 0px;
 }
 
+
+
+:root {
+  --buy-now: #FD9222;
+  --buy-now-hover: #FCF1E0;
+  --how-made: #1E1823;
+  --button-background: #FAFAFA;
+  --button-text: #FFFFFF;
+  --elipse-b: #111111;
+  --elipse-tf: #1E1823;
+  --sliders: rgba(17, 17, 17, 0.1);
+  --reviews-text: rgba(17, 17, 17, 0.7);
+  --advantages-text: rgba(255, 255, 255, 0.7);
+  --ul: #4C4C4C;
+  --ul-color: #ECEDED;
+  --border: rgba(255, 255, 255, 0.5);
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --cubic-bezier: (0.075, 0.82, 0.165, 1);
+  --shadow: rgba(215, 228, 249, 0.25);
+  --chocolate: rgba(253, 146, 34, 1);
+  --backdrop: rgba(25, 28, 38, 0.456);
+  --placeholder-color: rgba(64, 64, 64, 0.3);
+  --border: 1.5px solid rgba(17, 17, 17, 0.05);
+  --filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+
+
+
 a{
   text-decoration: none;
 }
@@ -279,14 +314,318 @@ color: #FFFFFF;
 
 
 
-@media screen and (max-width: 375px) {
- 
+
+/*--------- Subscribe------- */
+
+
+
+
+
+.section-subscribe .container {
+  width: 100%;
+  margin-top: 120px;
+  flex-wrap: wrap;
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+        url(./img/cherry_blossom.jpg);
+  padding-top: 62px;
+  padding-bottom: 63px;
+  transition: background-color 250ms var(--cubic-bezier),
+  color 250ms var(--cubic-bezier);
 }
 
-@media screen and (max-width: 768px) {
- 
+
+.titel-subscribe{
+margin-left: auto;
+margin-right: auto;
+max-width: 291px;
+text-align: center;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;    
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: -0.03em;
+color: #fff;
+margin-bottom: 24px;
+
 }
 
-@media screen and (max-width: 1200px) {
-  
+.text-subscribe{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.button-subscribe{
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 128px;
+  height: 41px;
+  background-color: #FD9222;
+  border: 1px solid #FD9222;
+  border-radius: 100px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 28px;
+  padding-right: 28px;
+  color: #fff;
+  font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.2;
+  transition: background-color 250ms var(--cubic-bezier),
+          color 250ms var(--cubic-bezier);
+}
+.button-subscribe:is(:hover, :focus) {
+  background-color: #FCF1E0;
+  color: #FD9222;
+  border: 1px solid #FCF1E0;
+}
+
+@media screen and (min-width: 380px) {
+  .section-subscribe .container {
+      width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .section-subscribe .container {
+      width: 744px;
+      justify-content: center;
+      padding-top: 72px;
+       padding-bottom: 72px;
+       background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+                  url(./img/cherry_blossom.jpg);
+  }
+      .titel-subscribe{
+              width: 378px;
+              font-size: 24px;
+              line-height: 1.16;
+              letter-spacing: -0.03em;
+          }
+      .text-subscribe {
+          color: #fff;
+          width: 467px;
+          justify-content: center;
+
+      }
+              .button-subscribe {
+                  width: 172px;
+                  height: 50px;
+                  font-size: 18px;
+                  line-height: 1.2;
+              }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-subscribe .container {
+      width: 1176px;
+      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+              url(./img/cherry_blossom.jpg);
+  }
+}
+
+
+
+
+/*-------- Modal --------*/
+
+
+
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+/* Overlay */
+.explore-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--backdrop);
+  transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
+}
+
+/* Modal Window */
+.explore-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 350px;
+  background-color: var(--button-background);
+  background-image: url(./img/Video.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  transform: translate(-50%, -50%) scaleY(1);
+  transition: transform 250ms var(--cubic);
+}
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .explore-modal {
+    background-image: url(./img/Video.jpg);
+  }
+}
+
+.explore-backdrop.is-hidden .explore-modal {
+  transform: translate(-50%, -50%) scaleY(0);
+}
+
+/* Modal Close Button */
+.explore-modal-close {
+  display: block;
+  margin: 21px 20px 136px auto;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  color: var(--button-text);
+  transition: color 250ms var(--cubic);
+}
+
+.explore-modal-close:is(:hover, :focus) {
+  color: var(--buy-now);
+}
+
+.explore-modal-close-icon {
+  width: 12px;
+  height: 12px;
+  fill: currentColor;
+}
+
+.explore-modal-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--elipse-b);
+  max-width: 260px;
+  margin-bottom: 28px;
+}
+
+.explore-modal-title span {
+  color: var(--buy-now);
+}
+
+.explore-subscribe {
+  padding: 32px 24px;
+}
+
+/* Form */
+.explore-subscribe-input-wrap {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  /* outline: 1px solid red; */
+}
+
+.explore-subscribe-input {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 313px;
+  height: 45px;
+  padding-left: 24px;
+  border: var(--border);
+  filter: var(--filter);
+  border-radius: 25px;
+  background-color: transparent;
+  outline: transparent;
+}
+
+.explore-subscribe-input::placeholder {
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  color: var(--placeholder-color);
+}
+
+.explore-subscribe-submit {
+  position: absolute;
+  right: 0;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  text-align: center;
+  color: var(--button-text);
+  width: 100px;
+  height: 45px;
+  background-color: var(--buy-now);
+  border-radius: 100px;
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
+}
+
+.explore-subscribe-submit:is(:hover, :focus) {
+  color: var(--buy-now);
+  background-color: var(--buy-now-hover);
+}
+
+/* Mobile Styles */
+@media screen and (min-width: 375px) {
+  .explore-modal {
+    width: 311px;
+    height: 350px;
+  }
+}
+
+/* Tablet Styles */
+@media screen and (min-width: 768px) {
+  .explore-modal {
+    width: 538px;
+    height: 412px;
+    background-image: url(./img/Video.jpg);
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .explore-modal {
+      background-image: url(./img/Video.jpg);
+    }
+  }
+
+  .explore-modal-close {
+    margin: 31px 31px 151px auto;
+  }
+
+  .explore-subscribe {
+    padding: 40px;
+  }
+
+  .explore-subscribe-input {
+    width: 313px;
+    height: 52px;
+    padding: 14px 18px;
+  }
+
+  .explore-subscribe-input::placeholder {
+    font-size: 18px;
+  }
+
+  .explore-subscribe-submit {
+    position: unset;
+    width: 137px;
+    height: 52px;
+  }
 }
