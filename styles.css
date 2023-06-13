@@ -517,9 +517,9 @@ color: #FFFFFF;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
-  height: 350px;
-  background-color: var(--button-background);
+  width: 180px;
+  height: 180px;
+  /* background-color: var(--button-background); */
   background-image: url(./img/Video.jpg);
   background-size: contain;
   background-repeat: no-repeat;
@@ -544,7 +544,7 @@ color: #FFFFFF;
 /* Modal Close Button */
 .explore-modal-close {
   display: block;
-  margin: 21px 20px 136px auto;
+  margin: 5px 10px 10px auto;
   background-color: transparent;
   padding: 0;
   border: none;
@@ -557,20 +557,24 @@ color: #FFFFFF;
 }
 
 .explore-modal-close-icon {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   fill: currentColor;
 }
 
 .explore-modal-title {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 6px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--elipse-b);
   max-width: 260px;
-  margin-bottom: 28px;
+  background-color: #9B8DA8;
+  border-radius: 30px;
+  margin-right: 60px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 
 .explore-modal-title span {
@@ -593,20 +597,22 @@ color: #FFFFFF;
 .explore-subscribe-input {
   display: flex;
   align-items: flex-start;
-  width: 100%;
-  max-width: 313px;
-  height: 45px;
-  padding-left: 24px;
+  width: 80px;
+  max-width:380px;
+  height: 25px;
+  padding-left: 10px;
+  
   border: var(--border);
   filter: var(--filter);
   border-radius: 25px;
-  background-color: transparent;
-  outline: transparent;
+  background-color: #FFFFFF;
+  /* outline: transparent; */
 }
 
 .explore-subscribe-input::placeholder {
-  font-size: 14px;
-  line-height: 1.21;
+  padding-left: 5px;
+  font-size: 7px;
+  line-height: 1.2;
   letter-spacing: -0.02em;
   color: var(--placeholder-color);
 }
@@ -615,14 +621,18 @@ color: #FFFFFF;
   position: absolute;
   right: 0;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 5px;
   line-height: 1.21;
   text-align: center;
   color: var(--button-text);
-  width: 100px;
-  height: 45px;
+  width: 25px;
+  height: 25px;
+  
   background-color: var(--buy-now);
   border-radius: 100px;
+  border: var(--border);
+  filter: var(--filter);
+
   transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
 }
 
