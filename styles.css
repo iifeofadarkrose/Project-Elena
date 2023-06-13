@@ -43,7 +43,7 @@ a{
   text-decoration: none;
 }
 .container {
-    
+    max-width: 320px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -63,6 +63,7 @@ font-size: 18px;
 line-height: 18px;
 
 color: #6F6F6F;
+
 }
 
 .page-header {
@@ -71,17 +72,14 @@ color: #6F6F6F;
     align-items: center;
     margin-top: 25px;
     margin-bottom: 20px;
-    margin-left: 20px;
-    
-   
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .nav-bar{
     display: flex;
     align-items: center;
     justify-content: center;
-    
-    padding-right: 20px;
     padding-left: 80px;
     gap: 5px;
     
@@ -90,17 +88,19 @@ color: #6F6F6F;
 /* ------ Hero Photo ------ */
 
 .photo-hero {
-  width: var(--wrapper-width);
-  height: var(--wrapper-width);
+  width: 300px;
+  height: 400px;
   line-height: var(--wrapper-width);
-  margin: auto;
   background: #fff url(./img/Start\ page.jpg) no-repeat
      center;
+     background-size;
   border: 10px rgba(155, 141, 168, 0.8);  
-  border-radius: 4px;
+  border-radius: 5px;
   box-shadow: none;
   background-size: cover;
-  padding-left: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  
 }
 
 
@@ -111,12 +111,13 @@ color: #6F6F6F;
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
+    margin-left: auto;
 }
 
 .video-hero{
-  
-  margin-right: 45px;
 
+margin-left: auto;
+margin-right: auto;
 }
 
 .video-text {
@@ -133,8 +134,8 @@ letter-spacing: -0.02em;
 
 color: #111111;
 
-margin-left: 20px;
-margin-right: 20px;
+margin-left: auto;
+margin-right: auto;
 }
 
 .video-coments:not(:first-child){
@@ -195,22 +196,21 @@ color: #100F0F;
   margin-top: 60px;
 
   background: rgba(155, 141, 168, 0.8);
-border-radius: 30px;
+border-radius: 20px;
 
-margin-right: 20px;
-margin-left: 10px;
-
+margin-left: auto;
+margin-right: auto;
 
 }
 
 .about-me-text{
-  display: block;
-margin-left: 25px;
+display: block;
+margin-left: 15px;
 font-family: 'Open Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 8px;
-line-height: 8px;
+font-size: 6px;
+line-height: 7px;
 letter-spacing: -0.02em;
 
 color: #FFFFFF;
@@ -233,11 +233,8 @@ margin-right: 20px;
 
 
 .section-subscribe {
- 
-  margin-top: 120px;
+  margin-top: 80px;
   flex-wrap: wrap;
-  /* background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-        url(./img/cherry_blossom.jpg); */
   padding-top: 30px;
   padding-bottom: 30px;
   transition: background-color 250ms var(--cubic-bezier),
@@ -246,6 +243,8 @@ margin-right: 20px;
   margin-left: 20px;
   background-color: rgba(155, 141, 168, 0.8);;
   border-radius: 20px;
+  margin-left: auto;
+margin-right: auto;
 }
 
 
@@ -360,15 +359,14 @@ margin-bottom: 24px;
 .footer{
   background: #9B8DA8;
   margin-top: 120px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .first-footer{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 
 .first-footer-text{
@@ -451,7 +449,6 @@ justify-content: space-between;
 
 .second-links{
   margin-top: 15px;
-
 margin-bottom: 20px;
 gap: 5px;
 }
