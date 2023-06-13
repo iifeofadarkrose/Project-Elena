@@ -514,8 +514,8 @@ color: #FFFFFF;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 330px;
-  height: 240px;
+  width: 300px;
+  height: 220px;
   /* background-color: var(--button-background); */
   background-image: url(./img/Video.jpg);
   background-size: contain;
@@ -561,7 +561,7 @@ color: #FFFFFF;
 
 .explore-modal-title {
   font-weight: 600;
-  font-size: 8px;
+  font-size: 7px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
@@ -569,9 +569,10 @@ color: #FFFFFF;
   max-width: 260px;
   background-color: #9B8DA8;
   border-radius: 30px;
-  padding-left: 25px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-right: 150px;
- 
   margin-bottom: 10px;
   margin-top: 70px;
 }
@@ -596,7 +597,7 @@ color: #FFFFFF;
 .explore-subscribe-input {
   display: flex;
   align-items: flex-start;
-  width: 80px;
+  width: 100px;
   max-width:380px;
   height: 25px;
   padding-left: 10px;
@@ -625,10 +626,10 @@ color: #FFFFFF;
   line-height: 1.21;
   text-align: center;
   color: var(--button-text);
-  width: 30px;
+  width: 40px;
   height: 25px;
   
-  margin-right: 170px;
+  margin-right: 110px;
   background-color: var(--buy-now);
   border-radius: 100px;
   border: var(--border);
