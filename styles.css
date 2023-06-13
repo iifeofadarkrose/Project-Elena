@@ -93,7 +93,6 @@ color: #6F6F6F;
   line-height: var(--wrapper-width);
   background: #fff url(./img/Start\ page.jpg) no-repeat
      center;
-     background-size;
   border: 10px rgba(155, 141, 168, 0.8);  
   border-radius: 5px;
   box-shadow: none;
@@ -115,7 +114,6 @@ color: #6F6F6F;
 }
 
 .video-hero{
-
 margin-left: auto;
 margin-right: auto;
 }
@@ -194,9 +192,10 @@ color: #100F0F;
   align-items: center;
   justify-content: space-between;
   margin-top: 60px;
-
+width: 280px;
+height: 200px;
   background: rgba(155, 141, 168, 0.8);
-border-radius: 20px;
+border-radius: 10px;
 
 margin-left: auto;
 margin-right: auto;
@@ -205,7 +204,7 @@ margin-right: auto;
 
 .about-me-text{
 display: block;
-margin-left: 15px;
+margin-left: 10px;
 font-family: 'Open Sans';
 font-style: normal;
 font-weight: 400;
@@ -218,7 +217,7 @@ margin-right: 20px;
 }
 
 .about-me-photo{
-    margin-left: 15px;
+    margin-left: 5px;
     margin-top: 15px;
     margin-bottom: 15px;
     
@@ -243,15 +242,13 @@ margin-right: 20px;
   margin-left: 20px;
   background-color: rgba(155, 141, 168, 0.8);;
   border-radius: 20px;
-  margin-left: auto;
-margin-right: auto;
+ 
 }
 
 
 .titel-subscribe{
 margin-left: auto;
 margin-right: auto;
-max-width: 291px;
 text-align: center;
 font-family: 'Montserrat';
 font-style: normal;
@@ -361,6 +358,7 @@ margin-bottom: 24px;
   margin-top: 120px;
   margin-left: auto;
   margin-right: auto;
+  
 }
 
 .first-footer{
@@ -397,6 +395,7 @@ font-size: 8px;
 line-height: 10px;
 
 text-align: center;
+
 letter-spacing: -0.02em;
 
 color: #FFFFFF;
@@ -426,6 +425,10 @@ color: #FFFFFF;
 
 }
 
+.contact-info{
+margin-top: 5px;
+}
+
 .namecontact{
 font-family: 'Montserrat';
 font-style: normal;
@@ -450,6 +453,7 @@ justify-content: space-between;
 .second-links{
   margin-top: 15px;
 margin-bottom: 20px;
+margin-right: 10px;
 gap: 5px;
 }
 
@@ -468,8 +472,8 @@ margin-left: 20px;
   font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
-font-size: 8px;
-line-height: 8px;
+font-size: 7px;
+line-height: 7px;
 
 
 display: flex;
@@ -692,3 +696,389 @@ color: #FFFFFF;
     height: 52px;
   }
 } */
+
+/* @media screen and (min-width:480px){
+  .container{
+    max-width: 440px;
+  }
+  .photo-hero{
+    margin-left: 70px;
+  }
+} */
+
+@media screen and (max-width:425px) {
+  .container{
+    max-width: 380px;
+
+  } 
+}
+
+@media screen and (min-width:768px){
+  .container{
+    max-width: 728px;
+  }
+
+.page-header{
+  margin-left: 40px;
+  margin-right: 40px;
+}
+  .project-name {   
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    
+    color: #6F6F6F;
+    
+    }
+
+.nav-bar > img{
+width: 50px;
+height: 50px;
+
+}
+  .photo-hero{
+    width: 500px;
+    margin-left: 114px;
+  }
+  
+  .video-hero .container{
+    width: 500px;
+    height: 350px;
+  }
+
+  .video-text{
+  margin-top: 30px;
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 17px;
+letter-spacing: -0.02em;
+  }
+
+  .about-me{
+    width: 700px;
+    height: 400px;
+  }
+
+  .about-me-photo{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 300px;
+    height: 330px;
+  }
+
+  .about-me-text{
+    display: block;
+    margin-left: 15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    
+    color: #FFFFFF;
+    margin-right: 20px;
+  }
+.icon-block{
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: rgba(204, 184, 210, 0.68);
+  border-radius: 939px;
+  display: flex;
+  align-items:center;
+  margin-top: 20px;
+  gap: 15px;
+}
+
+.icon-name{
+  display: flex;
+ justify-content: center;
+ align-items: center;
+
+ font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 25px;
+line-height: 25px;
+/* or 85% */
+
+letter-spacing: -0.02em;
+
+color: #100F0F;
+}
+
+.img-block{
+width: 50px;
+height: 50px;
+}
+
+.titel-subscribe{
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.section-subscribe {
+  margin-top: 80px;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  transition: background-color 250ms var(--cubic-bezier),
+  color 250ms var(--cubic-bezier);
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: rgba(155, 141, 168, 0.8);;
+  border-radius: 20px;
+
+}
+
+
+.titel-subscribe{
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;    
+font-size: 18px;
+line-height: 1.2;
+letter-spacing: -0.03em;
+color: #fff;
+margin-bottom: 24px;
+
+}
+
+.text-subscribe{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.29;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+  margin-bottom: 14px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 25px;
+}
+
+.button-subscribe{
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 160px;
+  height: 50px;
+  background-color: #FD9222;
+  border: 1px solid #FD9222;
+  border-radius: 100px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 28px;
+  padding-right: 28px;
+  color: #fff;
+  font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 1.2;
+  transition: background-color 250ms var(--cubic-bezier),
+          color 250ms var(--cubic-bezier);
+}
+.button-subscribe:is(:hover, :focus) {
+  background-color: #FCF1E0;
+  color: #FD9222;
+  border: 1px solid #FCF1E0;
+}
+
+
+
+.footer{
+  background: #9B8DA8;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first-footer{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-footer-text{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 17px;
+line-height: 18px;
+/* or 121% */
+
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+  
+margin-left: 20px;
+
+}
+
+.footer-contact{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 14px;
+
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+
+
+margin-top: 15px;
+margin-right: 20px;
+margin-bottom: 20px;
+}
+
+
+.footer-contact > a{
+  color: white;
+  font-size: 15px;
+
+  
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 15px;
+
+text-align: center;
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+
+}
+
+.contact-info{
+margin-top: 5px;
+}
+
+.namecontact{
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+
+text-align: center;
+
+color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+
+.second-footer{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+
+.second-links{
+  margin-top: 15px;
+margin-bottom: 20px;
+margin-right: 20px;
+gap: 5px;
+}
+
+.img-link{
+  width: 35px;
+  height: 25px;
+
+}
+.how-made-link{
+  display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
+margin-left: 20px;
+}
+
+
+.how-made-link > a{
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 15px;
+
+
+display: flex;
+align-items: center;
+
+letter-spacing: -0.02em;
+
+color: #FFFFFF;
+}
+}
+
+
+
+
+@media screen and (min-width: 1200px) {
+  .container{
+    max-width: 1000px;
+  }
+
+.project-name{
+  font-size: 35px;
+  line-height: 35px;
+}
+
+.img-link{
+  width: 35px;
+  height: 35px;
+  
+}
+
+.page-header{
+  margin-right: 100px;
+  margin-left: 100px;
+}
+
+.photo-hero{
+  width: 800px;
+  height: 500px;
+}
+
+
+.how-made{
+  display: flex;
+}
+.video-hero .container{
+  
+  width: 800px;
+  height: 500px;
+  margin-left: 30px;
+}
+
+}
