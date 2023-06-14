@@ -284,14 +284,14 @@ margin-bottom: 24px;
   display: flex;
   width: 128px;
   height: 31px;
-  background-color: #FD9222;
-  border: 1px solid #FD9222;
-  border-radius: 100px;
+  background-color: #CCB8D2;
+  border: 3px solid #9B8DA8;
+border-radius: 30px;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 28px;
   padding-right: 28px;
-  color: #fff;
+color: #100F0F;
   font-family: 'Montserrat';
       font-weight: 600;
       font-size: 14px;
@@ -299,11 +299,13 @@ margin-bottom: 24px;
   transition: background-color 250ms var(--cubic-bezier),
           color 250ms var(--cubic-bezier);
 }
+
 .button-subscribe:is(:hover, :focus) {
   background-color: #FCF1E0;
-  color: #FD9222;
+  color: #CCB8D2;
   border: 1px solid #FCF1E0;
 }
+
 /* 
 @media screen and (min-width: 380px) {
   .section-subscribe .container {
@@ -1035,6 +1037,211 @@ letter-spacing: -0.02em;
 
 color: #FFFFFF;
 }
+
+.button-subscribe{
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 250px;
+  height: 80px;
+  background-color: #CCB8D2;
+  border: 3px solid #9B8DA8;
+  border-radius: 93px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+color: #100F0F;
+  font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 1.2;
+  transition: background-color 250ms var(--cubic-bezier),
+          color 250ms var(--cubic-bezier);
+}
+
+.titel-subscribe{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;    
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 24px;
+  
+  }
+  
+  .text-subscribe{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.29;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    margin-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+ 
+  
+  .button-subscribe:is(:hover, :focus) {
+    background-color: #FCF1E0;
+    color: #CCB8D2;
+    border: 1px solid #FCF1E0;
+  }
+  
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  
+  /* Overlay */
+  .explore-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--backdrop);
+    transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
+  }
+  
+  /* Modal Window */
+  .explore-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 450px;
+    height: 400px;
+    /* background-color: var(--button-background); */
+    background-image: url(./img/Video.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    transform: translate(-50%, -50%) scaleY(1);
+    transition: transform 250ms var(--cubic);
+  }
+  
+  .explore-backdrop.is-hidden .explore-modal {
+    transform: translate(-50%, -50%) scaleY(0);
+  }
+  
+  /* Modal Close Button */
+  .explore-modal-close {
+    display: block;
+    margin: 5px 10px 10px auto;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: var(--button-text);
+    transition: color 250ms var(--cubic);
+  }
+  
+  .explore-modal-close:is(:hover, :focus) {
+    color: var(--buy-now);
+  }
+  
+  .explore-modal-close-icon {
+    width: 12px;
+    height: 12px;
+   
+  }
+  
+  .explore-modal-title {
+    font-weight: 600;
+    font-size: 7px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: var(--elipse-b);
+    max-width: 660px;
+    background-color: #9B8DA8;
+    border-radius: 30px;
+    padding-left: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 290px;
+    margin-bottom: 10px;
+    margin-top: 150px;
+  }
+  
+  .explore-modal-title span {
+    color: var(--buy-now);
+  }
+  
+  .explore-subscribe {
+    padding: 32px 24px;
+  }
+  
+  /* Form */
+  .explore-subscribe-input-wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* outline: 1px solid red; */
+  }
+  
+  .explore-subscribe-input {
+    display: flex;
+    align-items: flex-start;
+    width: 200px;
+    height: 25px;
+    padding-left: 10px;
+    
+    border: var(--border);
+    filter: var(--filter);
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    /* outline: transparent; */
+  }
+  
+  .explore-subscribe-input::placeholder {
+    
+    font-size: 10px;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--placeholder-color);
+  }
+  
+  .explore-subscribe-submit {
+    position: absolute;
+    right: 0;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 1.21;
+    text-align: center;
+    color: var(--button-text);
+    width: 50px;
+    height: 25px;
+    
+    margin-right: 140px;
+    background-color: var(--buy-now);
+    border-radius: 100px;
+    border: var(--border);
+    filter: var(--filter);
+  
+    transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
+  }
+  
+  .explore-subscribe-submit:is(:hover, :focus) {
+    color:  #9B8DA8;
+    background-color: white;
+  }
+
 }
 
 
@@ -1056,13 +1263,29 @@ color: #FFFFFF;
   height: 35px;
 }
 
-
+.about-me{
+  width: 1000px;
+  height: 500px;
+}
 
 .photo-hero{
   width: 800px;
   height: 500px;
 }
 
+
+.icon-block:last-child{
+  margin-bottom: 80px;
+}
+.about-me-photo{
+  width: 380px;
+  height: 400px;
+}
+
+.about-me-text{
+  line-height: 22px;
+  font-size: 20px;
+}
 
 .how-made{
   display: flex;
@@ -1085,4 +1308,209 @@ color: #FFFFFF;
 .socials-list{
   margin-top: 100px;
 }
+.button-subscribe{
+  margin-right: auto;
+  margin-left: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 250px;
+  height: 80px;
+  background-color: #CCB8D2;
+  border: 3px solid #9B8DA8;
+  border-radius: 93px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+color: #100F0F;
+  font-family: 'Montserrat';
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 1.2;
+  transition: background-color 250ms var(--cubic-bezier),
+          color 250ms var(--cubic-bezier);
+}
+
+.titel-subscribe{
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;    
+  font-size: 22px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #fff;
+  margin-bottom: 24px;
+  
+  }
+  
+  .text-subscribe{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.29;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: #fff;
+    margin-bottom: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+ 
+  
+  .button-subscribe:is(:hover, :focus) {
+    background-color: #FCF1E0;
+    color: #CCB8D2;
+    border: 1px solid #FCF1E0;
+  }
+  
+  .is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  
+  
+  /* Overlay */
+  .explore-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--backdrop);
+    transition: opacity 250ms var(--cubic), visibility 250ms var(--cubic);
+  }
+  
+  /* Modal Window */
+  .explore-modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 650px;
+    height: 600px;
+    /* background-color: var(--button-background); */
+    background-image: url(./img/Video.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  
+    transform: translate(-50%, -50%) scaleY(1);
+    transition: transform 250ms var(--cubic);
+  }
+  
+  .explore-backdrop.is-hidden .explore-modal {
+    transform: translate(-50%, -50%) scaleY(0);
+  }
+  
+  /* Modal Close Button */
+  .explore-modal-close {
+    display: block;
+    margin: 5px 10px 10px auto;
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: var(--button-text);
+    transition: color 250ms var(--cubic);
+  }
+  
+  .explore-modal-close:is(:hover, :focus) {
+    color: var(--buy-now);
+  }
+  
+  .explore-modal-close-icon {
+    width: 16px;
+    height: 16px;
+   
+  }
+  
+  .explore-modal-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    max-width: 660px;
+    background-color:#CCB8D2;
+    border-radius: 30px;
+    padding-left: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 290px;
+    margin-bottom: 10px;
+    margin-top: 250px;
+  }
+  
+  .explore-modal-title span {
+    color: var(--buy-now);
+  }
+  
+  .explore-subscribe {
+    padding: 32px 24px;
+  }
+  
+  /* Form */
+  .explore-subscribe-input-wrap {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    /* outline: 1px solid red; */
+  }
+  
+  .explore-subscribe-input {
+    display: flex;
+    align-items: flex-start;
+    width: 300px;
+    height: 45px;
+    padding-left: 10px;
+    
+    border: var(--border);
+    filter: var(--filter);
+    border-radius: 25px;
+    background-color: #FFFFFF;
+    /* outline: transparent; */
+  }
+  
+  .explore-subscribe-input::placeholder {
+    
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--placeholder-color);
+  }
+  
+  .explore-subscribe-submit {
+    position: absolute;
+    right: 0;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    text-align: center;
+    color: var(--button-text);
+    width: 70px;
+    height: 45px;
+    
+    margin-right: 230px;
+    background-color: #CCB8D2;
+    border-radius: 100px;
+    border: var(--border);
+    filter: var(--filter);
+  
+    transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
+  }
+  
+  .explore-subscribe-submit:is(:hover, :focus) {
+    color:  #9B8DA8;
+    background-color: white;
+  }
+
 }
