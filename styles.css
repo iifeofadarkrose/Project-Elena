@@ -718,10 +718,7 @@ color: #FFFFFF;
     max-width: 728px;
   }
 
-.page-header{
-  margin-left: 40px;
-  margin-right: 40px;
-}
+
   .project-name {   
     font-family: 'Bebas Neue';
     font-style: normal;
@@ -730,11 +727,11 @@ color: #FFFFFF;
     line-height: 22px;
     
     color: #6F6F6F;
-    
+    padding-left: 30px;
     }
 
 .nav-bar > img{
-width: 50px;
+width: 45px;
 height: 50px;
 
 }
@@ -837,8 +834,7 @@ height: 50px;
   padding-bottom: 80px;
   transition: background-color 250ms var(--cubic-bezier),
   color 250ms var(--cubic-bezier);
-  margin-right: 20px;
-  margin-left: 20px;
+  
   background-color: rgba(155, 141, 168, 0.8);;
   border-radius: 20px;
 
@@ -1052,18 +1048,15 @@ color: #FFFFFF;
 .project-name{
   font-size: 35px;
   line-height: 35px;
+ 
 }
 
 .img-link{
   width: 35px;
   height: 35px;
-  
 }
 
-.page-header{
-  margin-right: 100px;
-  margin-left: 100px;
-}
+
 
 .photo-hero{
   width: 800px;
@@ -1081,4 +1074,14 @@ color: #FFFFFF;
   margin-left: 30px;
 }
 
+
+.video-coments{
+  margin-top: 100px;
+  line-height: 20px;
+  font-size: 20px;
+}
+
+.socials-list{
+  margin-top: 100px;
+}
 }
