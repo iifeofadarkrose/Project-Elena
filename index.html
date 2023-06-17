@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <title>Elena Kot</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,9 +13,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
-    
-    <script type="module" src="./explore.js"></script>
-
+  <!--  <script src="app.js"></script> -->
+   <script type="module" src="./explore.js"></script>
+   <script
+     src="https://kit.fontawesome.com/fce9a50d02.js"
+     crossorigin="anonymous"
+   ></script>
 </head>
 <body>
 
@@ -142,22 +146,27 @@
             <p class="explore-modal-title">
               Enter your email
             </p>
-            <form class="explore-subscribe-form">
+
+            <form class="explore-subscribe-form" action="send_mail.php" name="form" method="POST">
               <label class="explore-subscribe-label" id="email"></label>
-              <div class="explore-subscribe-input-wrap">
-                <input
-                  class="explore-subscribe-input"
-                  type="email"
-                  name="email"
-                  placeholder="Enter your email"
-                  required
-                />
-                <button class="explore-subscribe-submit" type="submit">Submit</button>
+               <div class="explore-subscribe-input-wrap">
+              <input
+                class="explore-subscribe-input"
+                type="email"
+                placeholder="enter your email"
+                name="email"
+                id="email"
+                data-reg="^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$"
+              />
+              <label for="email"></label>
+                <button class="explore-subscribe-submit" type="submit" id="button" value="Submit">Submit</button>
               </div>
             </form>
+            
           </div>
         </div>
       </div>
+   
    
     
         <footer class="footer container">
@@ -201,13 +210,14 @@
                 <img class="img-link" src="./img/Facebook SVG.svg" alt="Facebook"  width="12" height="12"></a>
           
               <a href="https://www.patreon.com/Crea_con_el_buho">
-                <img  class="img-link"src="./img/Patreon SVG.svg" alt="Patreon" width="12" height="12"></a>
+                <img  class="img-link" src="./img/Patreon SVG.svg" alt="Patreon" width="12" height="12"></a>
     </div>
               
              </nav> 
           </div>
-         
+         </footer>
 
-           
+ 
+
 </body>
 </html>

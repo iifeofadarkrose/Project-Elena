@@ -496,7 +496,6 @@ color: #FFFFFF;
 
 
 
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -613,6 +612,38 @@ color: #FFFFFF;
   border-radius: 25px;
   background-color: #FFFFFF;
   /* outline: transparent; */
+
+
+
+.input-box {
+  height: 50px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.input-box input,
+.input-box textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background: #f0f1f8;
+  padding: 0 20px;
+  margin-bottom: 2px;
+}
+
+.input-box label {
+  font-size: 14px;
+  color: #afafb6;
+  padding-left: 5px;
+}
+
+.input-box textarea {
+  resize: none;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+  
 }
 
 .explore-subscribe-input::placeholder {
