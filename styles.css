@@ -59,7 +59,7 @@ a{
 font-family: 'Bebas Neue';
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
+font-size: 25px;
 line-height: 18px;
 
 color: #6F6F6F;
@@ -80,10 +80,9 @@ color: #6F6F6F;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 80px;
     gap: 5px;
-    
 }
+
 
 /* ------ Hero Photo ------ */
 
@@ -91,11 +90,7 @@ color: #6F6F6F;
   
   height: 400px;
   line-height: var(--wrapper-width);
-  background: #fff url(./img/Start\ page.jpg) no-repeat
-     center;
-  border: 10px rgba(155, 141, 168, 0.8);  
-  border-radius: 5px;
-  box-shadow: none;
+  background: #fff url(./img/Start\ page.webp) no-repeat center;
   background-size: cover;
   margin-left: 10px;
   margin-right: 10px;
@@ -105,29 +100,25 @@ color: #6F6F6F;
 
 /* ------ Hero-video ------ */
 
-.how-made {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-    margin-left: auto;
-}
 
-.video-hero{
-margin-left: auto;
-margin-right: auto;
-}
+ .video-hero{
+    width: 95%;
+    height: 200px;
+    margin-left: 10px;
+ 
+    margin-top: 40px;
+  }
 
 .video-text {
-  display: flex;
+  display: flex;   
   justify-content: center;
   align-items: center;
   margin-top: 30px;
 font-family: 'Open Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 8px;
-line-height: 10px;
+font-size: 9px;
+line-height: 11px;
 letter-spacing: -0.02em;
 
 color: #111111;
@@ -192,13 +183,13 @@ color: #100F0F;
   align-items: center;
   justify-content: space-between;
   margin-top: 60px;
-width: 280px;
-height: 200px;
+  width: 280px;
+  height: 200px;
   background: rgba(155, 141, 168, 0.8);
-border-radius: 10px;
+  border-radius: 10px;
 
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
@@ -208,7 +199,7 @@ margin-left: 10px;
 font-family: 'Open Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 6px;
+font-size: 7px;
 line-height: 7px;
 letter-spacing: -0.02em;
 
@@ -217,10 +208,11 @@ margin-right: 20px;
 }
 
 .about-me-photo{
+  width: 150px;
     margin-left: 5px;
     margin-top: 15px;
     margin-bottom: 15px;
-    
+    border-radius: 10px;
 }
 
 
@@ -229,20 +221,21 @@ margin-right: 20px;
 /*--------- Subscribe------- */
 
 
-
-
-.section-subscribe {
+.section-subscribe{
+  
   margin-top: 80px;
   flex-wrap: wrap;
   padding-top: 30px;
   padding-bottom: 30px;
   transition: background-color 250ms var(--cubic-bezier),
   color 250ms var(--cubic-bezier);
-  margin-right: auto;
-  margin-left:auto;
-  background-color: rgba(155, 141, 168, 0.8);;
-  border-radius: 20px;
  
+  background-image:url(./img/Video.webp);
+  background-position:  50% 25%;
+  border-radius: 20px;
+ margin-right: auto;
+ margin-left: auto;
+ width: 300px;
 }
 
 
@@ -252,19 +245,21 @@ margin-right: auto;
 text-align: center;
 font-family: 'Montserrat';
 font-style: normal;
-font-weight: 600;    
-font-size: 10px;
-line-height: 1.2;
+font-weight: 400;    
+font-size: 7px;
+line-height: 1.29;
 letter-spacing: -0.03em;
 color: #fff;
-margin-bottom: 24px;
-
+margin-right: 10px;
+margin-left: 10px;
+border-radius: 20px;
+background-color: #9B8DA8;
 }
 
 .text-subscribe{
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 8px;
   line-height: 1.29;
   text-align: center;
@@ -274,6 +269,11 @@ margin-bottom: 24px;
   margin-bottom: 14px;
   padding-left: 10px;
   padding-right: 10px;
+  background-color: #9B8DA8;
+  margin-right: 60px;
+margin-left: 60px;
+border-radius: 20px;
+margin-top: 7px;
 }
 
 .button-subscribe{
@@ -285,7 +285,7 @@ margin-bottom: 24px;
   width: 128px;
   height: 31px;
   background-color: #CCB8D2;
-  border: 3px solid #9B8DA8;
+  border: 1px solid #9B8DA8;
 border-radius: 30px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -294,7 +294,7 @@ border-radius: 30px;
 color: #100F0F;
   font-family: 'Montserrat';
       font-weight: 600;
-      font-size: 14px;
+      font-size: 10px;
       line-height: 1.2;
   transition: background-color 250ms var(--cubic-bezier),
           color 250ms var(--cubic-bezier);
@@ -306,58 +306,12 @@ color: #100F0F;
   border: 1px solid #FCF1E0;
 }
 
-/* 
-@media screen and (min-width: 380px) {
-  .section-subscribe .container {
-      width: 375px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .section-subscribe .container {
-      width: 744px;
-      justify-content: center;
-      padding-top: 72px;
-       padding-bottom: 72px;
-       background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-                  url(./img/cherry_blossom.jpg);
-  }
-      .titel-subscribe{
-              width: 378px;
-              font-size: 24px;
-              line-height: 1.16;
-              letter-spacing: -0.03em;
-          }
-      .text-subscribe {
-          color: #fff;
-          width: 467px;
-          justify-content: center;
-
-      }
-              .button-subscribe {
-                  width: 172px;
-                  height: 50px;
-                  font-size: 18px;
-                  line-height: 1.2;
-              }
-}
-
-@media screen and (min-width: 1200px) {
-  .section-subscribe .container {
-      width: 1176px;
-      background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-              url(./img/cherry_blossom.jpg);
-  }
-} */
-
-
-
 
 /* ------ Footer ------ */
 
 .footer{
   background: #9B8DA8;
-  margin-top: 120px;
+  margin-top: 110px;
   margin-left: auto;
   margin-right: auto;
   
@@ -367,6 +321,7 @@ color: #100F0F;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .first-footer-text{
@@ -417,9 +372,8 @@ margin-bottom: 20px;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 400;
-font-size: 8px;
+font-size: 10px;
 line-height: 8px;
-
 text-align: center;
 letter-spacing: -0.02em;
 
@@ -441,7 +395,7 @@ line-height: 10px;
 text-align: center;
 
 color: #FFFFFF;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 
@@ -465,7 +419,7 @@ gap: 5px;
 flex-direction: row;
 align-items: flex-start;
 padding: 0px;
-gap: 24px;
+gap: 14px;
 margin-left: 20px;
 }
 
@@ -474,8 +428,8 @@ margin-left: 20px;
   font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
-font-size: 7px;
-line-height: 7px;
+font-size: 11px;
+line-height: 11px;
 
 
 display: flex;
@@ -493,6 +447,8 @@ color: #FFFFFF;
 
 
 /*-------- Modal --------*/
+
+
 
 
 
@@ -522,7 +478,7 @@ color: #FFFFFF;
   width: 300px;
   height: 220px;
   /* background-color: var(--button-background); */
-  background-image: url(./img/Video.jpg);
+  background-image: url(./img/meduse2.jpg);
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -570,9 +526,9 @@ color: #FFFFFF;
   line-height: 1.2;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: var(--elipse-b);
+  color: var(--button-text);
   max-width: 260px;
-  background-color: #9B8DA8;
+  background-color: #CCB8D2;
   border-radius: 30px;
   padding-left: 15px;
   padding-top: 5px;
@@ -599,53 +555,20 @@ color: #FFFFFF;
   /* outline: 1px solid red; */
 }
 
-.explore-subscribe-input {
+.explore-subscribe-input{
   display: flex;
   align-items: flex-start;
   width: 100px;
   max-width:380px;
   height: 25px;
   padding-left: 10px;
-  
+  font-size: 6.5px;
   border: var(--border);
   filter: var(--filter);
   border-radius: 25px;
   background-color: #FFFFFF;
   /* outline: transparent; */
-
-
-
-.input-box {
-  height: 50px;
-  width: 100%;
-  margin-bottom: 30px;
 }
-
-.input-box input,
-.input-box textarea {
-  height: 100%;
-  width: 100%;
-  border: none;
-  border-radius: 5px;
-  background: #f0f1f8;
-  padding: 0 20px;
-  margin-bottom: 2px;
-}
-
-.input-box label {
-  font-size: 14px;
-  color: #afafb6;
-  padding-left: 5px;
-}
-
-.input-box textarea {
-  resize: none;
-  padding: 20px;
-  font-family: "Roboto", sans-serif;
-}
-  
-}
-
 .explore-subscribe-input::placeholder {
   
   font-size: 7px;
@@ -667,7 +590,7 @@ color: #FFFFFF;
   height: 25px;
   
   margin-right: 110px;
-  background-color: var(--buy-now);
+  background-color: #CCB8D2;
   border-radius: 100px;
   border: var(--border);
   filter: var(--filter);
@@ -680,72 +603,6 @@ color: #FFFFFF;
   background-color: var(--buy-now-hover);
 }
 
-/* Mobile Styles */
-/* @media screen and (min-width: 375px) {
-  .explore-modal {
-    width: 311px;
-    height: 350px;
-  }
-} */
-
-/* Tablet Styles
-@media screen and (min-width: 768px) {
-  .explore-modal {
-    width: 538px;
-    height: 412px;
-    background-image: url(./img/Video.jpg);
-  }
-
-  @media (min-device-pixel-ratio: 2),
-    (-webkit-min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    .explore-modal {
-      background-image: url(./img/Video.jpg);
-    }
-  }
-
-  .explore-modal-close {
-    margin: 31px 31px 151px auto;
-  }
-
-  .explore-subscribe {
-    padding: 40px;
-  }
-
-  .explore-subscribe-input {
-    width: 313px;
-    height: 52px;
-    padding: 14px 18px;
-  }
-
-  .explore-subscribe-input::placeholder {
-    font-size: 18px;
-  }
-
-  .explore-subscribe-submit {
-    position: unset;
-    width: 137px;
-    height: 52px;
-  }
-} */
-
-/* @media screen and (min-width:480px){
-  .container{
-    max-width: 440px;
-  }
-  .photo-hero{
-    margin-left: 70px;
-  }
-} */
-
-/* @media screen and (max-width:425px) {
-  .footer .container{
-    max-width: 580px;
-
-  } 
-} */
-
 @media screen and (min-width:768px){
   .container{
     max-width: 728px;
@@ -756,8 +613,8 @@ color: #FFFFFF;
     font-family: 'Bebas Neue';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 22px;
+    font-size: 30px;
+    line-height: 30px;
     
     color: #6F6F6F;
     padding-left: 30px;
@@ -773,19 +630,22 @@ height: 50px;
     margin-left: 114px;
   }
   
-  .video-hero .container{
+  .video-hero{
     width: 500px;
     height: 350px;
+    margin-left: 114px;
+    margin-top: 80px;
   }
 
   .video-text{
-  margin-top: 30px;
 font-family: 'Open Sans';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
 line-height: 17px;
 letter-spacing: -0.02em;
+
+
   }
 
   .about-me{
@@ -794,10 +654,12 @@ letter-spacing: -0.02em;
   }
 
   .about-me-photo{
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 10px;
-    width: 300px;
+    margin-right: 10px;
+    width: 280px;
     height: 330px;
+    border-radius: 20px;
   }
 
   .about-me-text{
@@ -806,16 +668,15 @@ letter-spacing: -0.02em;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
-    font-size: 15px;
-    line-height: 16px;
+    font-size: 17px;
+    line-height: 17px;
     letter-spacing: -0.02em;
     
     color: #FFFFFF;
     margin-right: 20px;
   }
 .icon-block{
-  padding-top: 25px;
-  padding-bottom: 25px;
+ 
   padding-left: 30px;
   padding-right: 30px;
   background: rgba(204, 184, 210, 0.68);
@@ -824,6 +685,7 @@ letter-spacing: -0.02em;
   align-items:center;
   margin-top: 20px;
   gap: 15px;
+  width: 300px;
 }
 
 .icon-name{
@@ -834,7 +696,7 @@ letter-spacing: -0.02em;
  font-family: 'Open Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 25px;
+font-size: 22px;
 line-height: 25px;
 /* or 85% */
 
@@ -857,7 +719,7 @@ height: 50px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   color: #fff;
-  margin-bottom: 24px;
+ 
 }
 
 .section-subscribe {
@@ -870,7 +732,7 @@ height: 50px;
   
   background-color: rgba(155, 141, 168, 0.8);;
   border-radius: 20px;
-
+ width: 700px;
 }
 
 
@@ -885,7 +747,6 @@ font-size: 18px;
 line-height: 1.2;
 letter-spacing: -0.03em;
 color: #fff;
-margin-bottom: 24px;
 
 }
 
@@ -899,10 +760,11 @@ margin-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
+ 
   margin-bottom: 14px;
+  margin-top: 10px;
   padding-left: 10px;
   padding-right: 10px;
-  padding-bottom: 25px;
 }
 
 .button-subscribe{
@@ -990,7 +852,7 @@ margin-bottom: 20px;
 
 .footer-contact > a{
   color: white;
-  font-size: 15px;
+  font-size: 20px;
 
   
 font-family: 'Montserrat';
@@ -1100,12 +962,11 @@ color: #100F0F;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;    
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   color: #fff;
-  margin-bottom: 24px;
-  
+  width: 650px;
   }
   
   .text-subscribe{
@@ -1121,6 +982,7 @@ color: #100F0F;
     margin-bottom: 14px;
     padding-left: 10px;
     padding-right: 10px;
+    width: 350px;
   }
   
  
@@ -1154,10 +1016,10 @@ color: #100F0F;
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 450px;
-    height: 400px;
+   width: 550px;
+   height: 350px;
     /* background-color: var(--button-background); */
-    background-image: url(./img/Video.jpg);
+    background-image: url(./img/meduse2.jpg);
     background-size: contain;
     background-repeat: no-repeat;
   
@@ -1172,7 +1034,7 @@ color: #100F0F;
   /* Modal Close Button */
   .explore-modal-close {
     display: block;
-    margin: 5px 10px 10px auto;
+    margin: 10px 40px 10px auto;
     background-color: transparent;
     padding: 0;
     border: none;
@@ -1196,14 +1058,14 @@ color: #100F0F;
     line-height: 1.2;
     letter-spacing: -0.03em;
     text-transform: uppercase;
-    color: var(--elipse-b);
+    color: var(--button-text);
     max-width: 660px;
     background-color: #9B8DA8;
     border-radius: 30px;
-    padding-left: 15px;
+    padding-left: 50px;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-right: 290px;
+    margin-right: 330px;
     margin-bottom: 10px;
     margin-top: 150px;
   }
@@ -1228,10 +1090,10 @@ color: #100F0F;
   .explore-subscribe-input {
     display: flex;
     align-items: flex-start;
-    width: 200px;
+    width: 175px;
     height: 25px;
     padding-left: 10px;
-    
+    font-size: 8px;
     border: var(--border);
     filter: var(--filter);
     border-radius: 25px;
@@ -1252,15 +1114,15 @@ color: #100F0F;
     position: absolute;
     right: 0;
     font-weight: 600;
-    font-size: 8px;
+    font-size: 9px;
     line-height: 1.21;
     text-align: center;
     color: var(--button-text);
     width: 50px;
     height: 25px;
     
-    margin-right: 140px;
-    background-color: var(--buy-now);
+    margin-right: 270px;
+    background-color: #CCB8D2;
     border-radius: 100px;
     border: var(--border);
     filter: var(--filter);
@@ -1310,28 +1172,27 @@ color: #100F0F;
 }
 .about-me-photo{
   width: 380px;
-  height: 400px;
+  height: 465px;
+  border-radius: 25px;
+  margin-bottom: 30px;
 }
 
 .about-me-text{
-  line-height: 22px;
-  font-size: 20px;
+  line-height: 23px;
+  font-size: 23px;
 }
 
-.how-made{
-  display: flex;
-}
-.video-hero .container{
-  
-  width: 800px;
-  height: 500px;
-  margin-left: 30px;
+
+.video-hero{
+    width: 800px;
+    height: 500px;
+  margin-left: 120px;
   margin-top: 120px;
 }
 
 
 .video-coments{
-  margin-top: 100px;
+  margin-top: 60px;
   line-height: 20px;
   font-size: 20px;
 }
@@ -1339,6 +1200,23 @@ color: #100F0F;
 .socials-list{
   margin-top: 100px;
 }
+
+
+.section-subscribe {
+  width: 1000px;
+  height: 300px;
+  margin-top: 80px;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  transition: background-color 250ms var(--cubic-bezier),
+  color 250ms var(--cubic-bezier);
+  
+  background-color: rgba(155, 141, 168, 0.8);;
+  border-radius: 20px;
+
+}
+
 .button-subscribe{
   margin-right: auto;
   margin-left: auto;
@@ -1364,18 +1242,19 @@ color: #100F0F;
 }
 
 .titel-subscribe{
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 120px;
+  margin-right: 120px;
+  border-radius: 20px;
   text-align: center;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;    
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.2;
   letter-spacing: -0.03em;
   color: #fff;
-  margin-bottom: 24px;
-  
+  width: 650px;
+  margin-left: 150px;
   }
   
   .text-subscribe{
@@ -1385,12 +1264,14 @@ color: #100F0F;
     font-size: 18px;
     line-height: 1.29;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
     color: #fff;
+    margin-left: 340px;
+    margin-right: 340px;
+    border-radius: 20px;
     margin-bottom: 14px;
     padding-left: 10px;
     padding-right: 10px;
+    
   }
   
  
@@ -1427,7 +1308,7 @@ color: #100F0F;
     width: 650px;
     height: 600px;
     /* background-color: var(--button-background); */
-    background-image: url(./img/Video.jpg);
+    background-image: url(./img/meduse2.jpg);
     background-size: contain;
     background-repeat: no-repeat;
   
@@ -1502,7 +1383,7 @@ color: #100F0F;
     width: 300px;
     height: 45px;
     padding-left: 10px;
-    
+    font-size: 14px;
     border: var(--border);
     filter: var(--filter);
     border-radius: 25px;
